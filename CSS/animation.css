@@ -1,0 +1,24 @@
+/* ========================================== Navbar style ========================================== */
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: red; /* Change color on hover */
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Initially set to middle */
+    bottom: 1px;
+    width: 0;
+    height: 2px; /* Thickness of the line */
+    background-color: red; /* Color of the line */
+    transition: width 0.3s ease, left 0.3s ease; /* Transition effect for width and left */
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%; /* Expand the line on hover */
+    left: 0; /* Move the line to the left */
+}
+
+/* ================================================================================================== */
