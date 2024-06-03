@@ -92,4 +92,27 @@ main {
   right: 20px;
   margin-top: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.day-night-theme:hover {
+  color: var(--accent-primary);
+  transform: scale(1.2);
+}
+
+/* .shadow-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shadow-button:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 80px -10px var(--accent-primary);
+}
+ */
