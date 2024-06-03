@@ -7,12 +7,13 @@
   --bg-base: #121212;
   --bg-base-lt: #222222;
   --bg-base-ltr: #393939;
+  
   /* Text Colors */
   --text-base: #ffffff;
   --text-base-lt: #e9e9e9;
 
   --accent-primary: #ea580c;       /* #0891b2 */
-  --accent-secondary: #66fcf1;
+  --accent-secondary: #c2410c;
 }
 
 /* Fonts */
@@ -21,6 +22,7 @@
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Times New Roman', Times, serif;
   --font-cursive: 'Clicker Script', cursive;
+
   /* heading font sizes */
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */
@@ -35,6 +37,7 @@
   --fs-7xl: 4.5rem; /* 72px */
   --fs-8xl: 6rem; /* 96px */
   --fs-9xl: 8rem; /* 128px */
+
   /* Font Weights */
   --fw-normal: 400;
   --fw-medium: 500;

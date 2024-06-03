@@ -20,3 +20,23 @@ function setInitialMode() {
 window.addEventListener("load", setInitialMode);
 
 /* ================================== ===========================  ================================== */
+// script.js
+
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  let currentPosition = window.pageYOffset + (window.innerHeight / 2);
+
+  sections.forEach(section => {
+    let sectionTop = section.offsetTop;
+    let sectionHeight = section.clientHeight;
+
+    if (currentPosition >= sectionTop && currentPosition < (sectionTop + sectionHeight)) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+      document.querySelector(`.nav-link[href="#${section.id}"]`).classList.add('active');
+    }
+  });
+});

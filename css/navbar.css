@@ -52,9 +52,13 @@
     height: 5rem;
     color: var(--text-base);
     text-decoration: none;
+    transition: transform 500ms linear;
+  }
+  .nav-link.active {
+    background-color: var(--accent-primary);
   }
   .nav-link:hover {
-    background-color: var(--accent-primary);
+    transform: translateY(-10px);
   }
   .link-text{
     display: none;
