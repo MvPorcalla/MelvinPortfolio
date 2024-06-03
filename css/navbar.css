@@ -110,6 +110,9 @@
   .nav-link {
     justify-content: center;
   }
+  .nav-link:hover {
+    transform: translateY(0);
+  }
 
   .sidenavbar:hover .link-text{
     display: none;
