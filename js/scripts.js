@@ -21,11 +21,13 @@ window.addEventListener("load", setInitialMode);
 
 /* ================================== ===========================  ================================== */
 
+/* ==================== highlight the corresponding navigation link in a sidebar ==================== */
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
-  let currentPosition = window.scrollY  + (window.innerHeight / 2);
+  let currentPosition = window.scrollY + (window.innerHeight / 2);
 
   sections.forEach(section => {
     let sectionTop = section.offsetTop;
