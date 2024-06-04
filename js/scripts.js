@@ -20,13 +20,12 @@ function setInitialMode() {
 window.addEventListener("load", setInitialMode);
 
 /* ================================== ===========================  ================================== */
-// script.js
 
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
-  let currentPosition = window.pageYOffset + (window.innerHeight / 2);
+  let currentPosition = window.scrollY  + (window.innerHeight / 2);
 
   sections.forEach(section => {
     let sectionTop = section.offsetTop;
