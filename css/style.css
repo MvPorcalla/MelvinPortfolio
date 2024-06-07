@@ -51,8 +51,8 @@ body.light {
   --bg-base-lt: #f1ecf3;
   --bg-base-ltr: #ffffff;
   
-  --text-base: #302e4d;
-  --text-base-lt: #504e70;
+  --text-base: #040404;
+  --text-base-lt: #302e4d;
 
   --accent-primary: #c2410c;
   --accent-secondary: #c2410c;
@@ -91,10 +91,11 @@ main {
   min-height: 100vh;
   padding-block: 3rem 3rem;
 }
-.grid{
+
+/* .grid{
   display: grid;
   gap: 1.5rem;
-}
+} */
 .grid-item {
   background-color: lightblue;
   padding: 1rem;
@@ -103,15 +104,6 @@ main {
 
 .home_img{
   width: 20rem;
-}
-
-
-.geometric-box{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: var(--accent-primary);
-  rotate: -30deg;
 }
 
 /* Light and Dark MODE */
@@ -127,7 +119,9 @@ main {
   transform: scale(1.2);
 }
 
-
+.home_name {
+  font-size: var(--fs-5xl);
+}
 
 
 
