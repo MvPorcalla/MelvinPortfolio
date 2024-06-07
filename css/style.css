@@ -79,7 +79,11 @@ body::-webkit-scrollbar-thumb {
   background: var(--accent-primary);
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #be123c 0%, #ea580c 20%, #15803d 40%, #0d9488 60%, #0284c7 80%, #1d4ed8 100%);
+  background: linear-gradient(135deg,
+   #be123c 0%, #ea580c 20%,
+    #15803d 40%, #0d9488 60%,
+     #0284c7 80%, #1d4ed8 100%
+     );
 }
 
 main {
@@ -92,19 +96,35 @@ main {
   padding-block: 3rem 3rem;
 }
 
-/* .grid{
-  display: grid;
-  gap: 1.5rem;
-} */
-.grid-item {
-  background-color: lightblue;
-  padding: 1rem;
-  text-align: center;
+
+
+/* ======================================== HOME ======================================== */
+.home {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
 }
 
-.home_img{
-  width: 20rem;
+.home_image {
+  display: inline-block;
+  position: relative;
+
 }
+.home_image::before {
+  position: absolute;
+  bottom: -6%;
+  right: -8%;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--text-base);
+  content: '';
+  z-index: -1;
+}
+.home_img {
+  width: 22rem;
+} 
+
+
 
 /* Light and Dark MODE */
 .day-night-theme {
