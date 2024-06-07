@@ -47,8 +47,8 @@
 }
 
 body.light {
-  --bg-base: #f1ecf3;
-  --bg-base-lt: #fdf9ff;
+  --bg-base: #dedede;
+  --bg-base-lt: #f1ecf3;
   --bg-base-ltr: #ffffff;
   
   --text-base: #302e4d;
@@ -89,8 +89,32 @@ main {
 
 .section {
   min-height: 100vh;
+  padding-block: 3rem 3rem;
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+.grid-item {
+  background-color: lightblue;
+  padding: 1rem;
+  text-align: center;
 }
 
+.home_img{
+  width: 20rem;
+}
+
+
+.geometric-box{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-primary);
+  rotate: -30deg;
+}
+
+/* Light and Dark MODE */
 .day-night-theme {
   position: fixed;
   right: 20px;
@@ -98,11 +122,20 @@ main {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .day-night-theme:hover {
   color: var(--accent-primary);
   transform: scale(1.2);
 }
+
+
+
+
+
+
+
+
+
+
 
 /* .shadow-button {
   padding: 10px 20px;
