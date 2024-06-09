@@ -3,7 +3,7 @@
     position: fixed;
     background-color: var(--bg-base-lt);
     transition: width 100ms ease;
-  
+    z-index: 10;
   }
   
   .navbar-nav {

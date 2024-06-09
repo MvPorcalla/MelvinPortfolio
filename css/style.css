@@ -42,7 +42,7 @@
   --text-base: #ffffff;
   --text-base-lt: #e9e9e9;
 
-  --accent-primary: #ea580c;       /* #0891b2 */
+  --accent-primary: #ea580c;
   --accent-secondary: #c2410c;
 }
 
@@ -57,7 +57,6 @@ body.light {
   --accent-primary: #c2410c;
   --accent-secondary: #c2410c;
 }
-
 
 body {
   font-family: var(--font-secondary);
@@ -86,45 +85,20 @@ body::-webkit-scrollbar-thumb:hover {
      );
 }
 
+* {
+  text-decoration: none !important;
+}
+
 main {
   margin-left: 5rem;
   padding: 1rem;
+  
 }
 
 .section {
   min-height: 100vh;
   padding-block: 3rem 3rem;
 }
-
-
-
-/* ======================================== HOME ======================================== */
-.home {
-  display: flex;
-  justify-content: center; /* horizontally center */
-  align-items: center; /* vertically center */
-}
-
-.home_image {
-  display: inline-block;
-  position: relative;
-
-}
-.home_image::before {
-  position: absolute;
-  bottom: -6%;
-  right: -8%;
-  width: 100%;
-  height: 100%;
-  border: 4px solid var(--text-base);
-  content: '';
-  z-index: -1;
-}
-.home_img {
-  width: 22rem;
-} 
-
-
 
 /* Light and Dark MODE */
 .day-night-theme {
@@ -139,13 +113,83 @@ main {
   transform: scale(1.2);
 }
 
+/* ======================================== HOME ======================================== */
+
 .home_name {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-7xl);
+  margin: 0;
+}
+.home_title {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-normal);
+}
+.home_description {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-normal);
+}
+
+
+/* .home_social {
+}
+.home_social-link {
+  
+}
+.home_social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+} */
+
+.home_social {
+  display: grid;
+  gap: 1.5rem;
+}
+.home_social_link {
+  background-color: var(--bg-base-ltr);
+  border-radius: 5px;
+  padding: 6px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.home_icon {
+  font-size: 1.5rem;
+  color: var(--text-base);
+}
+.home_icon:hover {
+  color: var(--accent-primary);
+}
+
+.home_social_link:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 0 80px -5px var(--accent-primary);
 }
 
 
 
 
+
+.home_image {
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+}
+.home_image::before {
+  position: absolute;
+  bottom: -5%;
+  right: -7%;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--text-base);
+  background-color: var(--bg-base-lt);
+  content: '';
+  z-index: -2;
+}
+.home_img {
+  width: 20rem;
+  border: 4px solid var(--text-base);
+} 
 
 
 

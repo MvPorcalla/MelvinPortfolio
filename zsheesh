@@ -1,0 +1,23 @@
+        
+
+            
+<div class="home_image">
+    <img src="./assets/images/me2.png" alt="image" class="home_img">
+</div>
+
+
+<!-- social column -->
+<div class="col-md-1 mt-5 mt-md-0 d-flex flex-column align-items-center">
+    <!-- social link icons -->
+    <div class="home_social d-flex flex-column">
+    <a href="https://www.facebook.com/profile.php?id=100074859700201" target="_blank" class="home_social-link mb-3">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/melvin-porcalla-7012b9289/" target="_blank" class="home_social-link mb-3">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/MvPorcalla" target="_blank" class="home_social-link mb-3">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    </div>
+</div>
