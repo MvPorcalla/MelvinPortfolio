@@ -1,23 +1,25 @@
-        
+<style>
+    .home_image_container {
+    position: relative;
+  }
 
-            
-<div class="home_image">
-    <img src="./assets/images/me2.png" alt="image" class="home_img">
-</div>
+  .home_image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Ensure no overflow */
+  }
 
+  .home_img {
+    width: 100%; /* Ensure the image fits within its container */
+    transition: transform 0.3s ease; /* Smooth transition for scale effect */
+  }
 
-<!-- social column -->
-<div class="col-md-1 mt-5 mt-md-0 d-flex flex-column align-items-center">
-    <!-- social link icons -->
-    <div class="home_social d-flex flex-column">
-    <a href="https://www.facebook.com/profile.php?id=100074859700201" target="_blank" class="home_social-link mb-3">
-        <i class="fa-brands fa-facebook-f"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/melvin-porcalla-7012b9289/" target="_blank" class="home_social-link mb-3">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/MvPorcalla" target="_blank" class="home_social-link mb-3">
-        <i class="fa-brands fa-github"></i>
-    </a>
-    </div>
-</div>
+  .home_image:hover {
+
+    box-shadow: 0 20px 80px -10px var(--accent-primary);
+  }
+
+  .home_img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+</style>
