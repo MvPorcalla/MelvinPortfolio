@@ -42,6 +42,8 @@
   --text-base: #ffffff;
   --text-base-lt: #e9e9e9;
 
+  --neutral-color: #fafafa;
+
   --accent-primary: #ea580c;
   --accent-secondary: #c2410c;
 }
@@ -49,10 +51,12 @@
 body.light {
   --bg-base: #dedede;
   --bg-base-lt: #f1ecf3;
-  --bg-base-ltr: #ffffff;
+  --bg-base-ltr: #f0f8ff;
   
   --text-base: #040404;
   --text-base-lt: #1f1d30;
+
+  --neutral-color: #000000;
 
   --accent-primary: #c2410c;
   --accent-secondary: #c2410c;
@@ -116,6 +120,12 @@ main {
 /* ======================================== HOME ======================================== */
 
 /* ================== Image style ================== */
+
+
+.home_title_name {
+  display: none;
+  text-align: center;
+}
 .home_image_container {
   position: relative;
 }
@@ -174,16 +184,15 @@ main {
 }
 
 .home_scroll {
-  position: absolute;
+  position: relative;
   display: block;
-  bottom: 1.25rem;
   margin: 0;
 }
 
 .home_scroll-box {
-  background-color: var(--bg-base-ltr);
+  background-color: var(--text-base);
   border-radius: 2px;
-  color: var(--text-base);
+  color: var(--bg-base);
   width: 36px;
   height: 36px;
   display: grid;
@@ -216,12 +225,15 @@ main {
   }
 }
 /* ================================================== */
-
 /* =============== home_social links =============== */
 .home_social {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
+  
 }
+
 .home_social_link {
   background-color: var(--bg-base-ltr);
   border-radius: 5px;
@@ -237,11 +249,11 @@ main {
 .home_icon:hover {
   color: var(--accent-primary);
 }
-
 .home_social_link:hover {
   transform: translate(0, -5px);
   box-shadow: 0 0 80px -5px var(--accent-primary);
 }
+
 /* ================================================== */
 
 

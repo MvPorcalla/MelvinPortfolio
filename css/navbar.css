@@ -86,7 +86,7 @@
 /* -------------------------- Responsiveness -------------------------- */
 
 /* Small screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .sidenavbar {
     bottom: 0;
     width: 100vw;
