@@ -3,14 +3,15 @@
     /* ======================================== HOME ======================================== */
     .home_title_name {
         display: block;
-        font-size: var(--fs-5xl);
+        font-size: var(--fs-4xl);
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
     }
     .home_name, .home hr {
         display: none;
     }
     .home_title {
+        font-size: var(--fs-3xl);
         margin-top: 2rem;
         text-align: center;
     }
@@ -18,6 +19,7 @@
         display: none;
     }
     .home_description {
+        font-size: var(--fs-lg);
         text-align: center;
     }
 
@@ -41,10 +43,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
-
     }
  
+    .home_scroll-container {
+        margin-top: 1rem;
+    }
     .home_scroll {
         position: relative;
         display: flex;
@@ -52,7 +55,6 @@
         justify-content: center;
         align-items: center;
         bottom: auto;
-        margin-bottom: 1rem;
     }
 }
 
@@ -62,17 +64,19 @@
     /* ======================================== HOME ======================================== */
     .home_title_name {
         display: block;
-        font-size: var(--fs-6xl);
-        margin-bottom: 3rem;
+        font-size: var(--fs-5xl);
+        margin-bottom: 1rem;
     }
     
     .home_name {
-
         display: none;
     }
     .home_title {
         font-size: var(--fs-3xl);
         text-align: center;
+    }
+    .home_title span {
+        display: none;
     }
 
     .home_description {
@@ -97,10 +101,12 @@
     }
 
     .home_social {
-        margin-top: 2rem;
-
+        margin-top: 1rem;
     }
  
+    .home_scroll-container {
+        margin-top: 1rem;
+    }
     .home_scroll {
         position: relative;
         display: flex;
@@ -108,7 +114,6 @@
         justify-content: center;
         align-items: center;
         bottom: auto;
-        margin-bottom: 1rem;
     }
 
 }
@@ -118,25 +123,18 @@
     
     /* ======================================== HOME ======================================== */
 
-    .home hr {
-        display: none;
-    }
-    
+
     .home_name {
         font-size: var(--fs-6xl);
     }
     .home_title {
         font-size: var(--fs-3xl);
     }
-    .home_title span {
-        display: none;
-    }
+
     .home_description {
         font-size: var(--fs-lg);
         margin-top: 1rem;
     }
-
-
     .home_image_container {
         display: flex;
         flex-direction: column;
@@ -151,20 +149,28 @@
     .home_info {
         margin-top: 1rem; 
     }
-
+   
     .home_social {
-        margin-top: 4rem;
-
+        flex-direction: column;
+    }
+    .home_icon:hover {
+        color: var(--accent-primary);
+      }
+    .home_social_link:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 0 80px -5px var(--accent-primary);
     }
  
+    .home_scroll-container {
+        margin-top: 4rem;
+    }
     .home_scroll {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         bottom: auto;
-        margin-bottom: 1rem;
+    }
+    .home_scroll-box:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 0 80px -5px var(--accent-primary);
     }
 }
 
@@ -173,8 +179,16 @@
 @media (min-width: 1200px) {
 
     .home_social {
+        flex-direction: column;
+    }
+    .home_scroll-container {
         margin-top: 3rem;
-        
+    }
+
+
+    .home_scroll-box:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 0 80px -5px var(--accent-primary);
     }
     
     .home_image:hover {
@@ -185,5 +199,13 @@
     }
     .home_image_container:hover {
     transform: translate(0, -5px);
+    }
+
+    .home_icon:hover {
+        color: var(--accent-primary);
+    }
+    .home_social_link:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 0 80px -5px var(--accent-primary);
     }
 }

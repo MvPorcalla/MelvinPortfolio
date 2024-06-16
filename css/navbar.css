@@ -21,7 +21,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: var(--accent-primary);
+    background: var(--color-primary);
   }
 
   /* Logo styles */
@@ -55,7 +55,7 @@
     transition: transform 500ms linear;
   }
   .nav-link.active {
-    background-color: var(--accent-primary);
+    background-color: var(--color-primary);
   }
   .nav-link:hover {
     transform: translateY(-10px);

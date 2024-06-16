@@ -39,7 +39,7 @@
   --bg-base-ltr: #393939;
   
   /* Text Colors */
-  --text-base: #ffffff;
+  --text-base: #f0f8ff;
   --text-base-lt: #e9e9e9;
   --text-base-ltr: #040404;
 
@@ -48,13 +48,13 @@
 }
 
 body.light {
-  --bg-base: #dedede;
-  --bg-base-lt: #f1ecf3;
-  --bg-base-ltr: #f0f8ff;
+  --bg-base: #e8dfec;
+  --bg-base-lt: #fdf9ff;
+  --bg-base-ltr: #f2f2f2;
   
-  --text-base: #040404;
+  --text-base: #111111;
   --text-base-lt: #1f1d30;
-  --text-base-ltr: #ffffff;
+  --text-base-ltr: #f0f8ff;
 
   --accent-primary: #c2410c;
   --accent-secondary: #c2410c;
@@ -102,6 +102,14 @@ main {
   padding-block: 3rem 3rem;
 }
 
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+
+
+/* ======================================== ======================================== */
 /* Light and Dark MODE */
 .day-night-theme {
   position: fixed;
@@ -116,6 +124,7 @@ main {
 }
 
 /* ======================================== HOME ======================================== */
+
 
 /* ================== Image style ================== */
 
@@ -189,7 +198,8 @@ main {
   font-size: 1.5rem;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 0.5s;
+  transition: color 0.3s, transform 0.3s;
+
 }
 .home_scroll-box i {
   animation: scroll-down 2s infinite;
@@ -224,7 +234,7 @@ main {
 }
 
 .home_social_link {
-  background-color: var(--bg-base-ltr);
+  background-color: var(--text-base);
   border-radius: 5px;
   padding: 6px;
   text-align: center;
@@ -233,15 +243,9 @@ main {
 
 .home_icon {
   font-size: 1.5rem;
-  color: var(--text-base);
+  color: var(--text-base-ltr);
 }
-.home_icon:hover {
-  color: var(--accent-primary);
-}
-.home_social_link:hover {
-  transform: translate(0, -5px);
-  box-shadow: 0 0 80px -5px var(--accent-primary);
-}
+
 
 /* ================================================== */
 
@@ -262,5 +266,4 @@ main {
   box-shadow: 0 20px 80px -10px var(--accent-primary);
 }
  */
-
 
