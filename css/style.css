@@ -314,6 +314,13 @@ main {
 .about_skills-title {
   font-size: var(--fs-2xl);
 }
+
+.about_icons-container {
+  margin-bottom: 5rem;
+}
+.about_icons {
+  font-size: var(--fs-5xl);
+}
 /* ======================================================================================= */
 
 
