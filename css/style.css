@@ -43,8 +43,10 @@
   --text-base-lt: #e9e9e9;
   --text-base-ltr: #040404;
 
-  --accent-primary: #ea580c;
-  --accent-secondary: #c2410c;
+  --color-primary: #ea580c;
+  --color-secondary: #c2410c;
+  --color-gradient: linear-gradient(135deg, #22c55e, #10b981, #06b6d4, #0ea5e9, #0284c7);
+
 }
 
 body.light {
@@ -56,8 +58,10 @@ body.light {
   --text-base-lt: #1f1d30;
   --text-base-ltr: #f0f8ff;
 
-  --accent-primary: #c2410c;
-  --accent-secondary: #c2410c;
+  --color-primary: #c2410c;
+  --color-secondary: #c2410c;
+  --color-gradient: linear-gradient(to right, blue, green);
+
 }
 
 body {
@@ -77,14 +81,10 @@ body::-webkit-scrollbar-track {
   background: var(--bg-base-ltr);
 }
 body::-webkit-scrollbar-thumb {
-  background: var(--accent-primary);
+  background: var(--color-primary);
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg,
-   #be123c 0%, #ea580c 20%,
-    #15803d 40%, #0d9488 60%,
-     #0284c7 80%, #1d4ed8 100%
-     );
+  background: var(--color-gradient)
 }
 
 * {
@@ -108,6 +108,11 @@ main {
   margin: auto;
 }
 
+.gradient-text{
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* ======================================== ======================================== */
 /* Light and Dark MODE */
@@ -119,7 +124,7 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .day-night-theme:hover {
-  color: var(--accent-primary);
+  color: var(--color-primary);
   transform: scale(1.2);
 }
 
@@ -140,9 +145,11 @@ main {
   display: inline-block;
   position: relative;
   z-index: -1;
+  
 }
 
 .home_image::before {
+  content: '';
   position: absolute;
   bottom: -5%;
   right: -7%;
@@ -150,13 +157,14 @@ main {
   height: 100%;
   border: 4px solid var(--text-base);
   background-color: var(--bg-base-lt);
-  content: '';
+  transition: border-color 0.3s ease;
   z-index: -2;
 }
 .home_img {
   width: 20rem;
   border: 4px solid var(--text-base);
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
 } 
 
 
@@ -190,7 +198,7 @@ main {
 .home_scroll-box {
   background-color: var(--text-base);
   border-radius: 2px;
-  color: var(--bg-base);
+  color: var(--text-base-ltr);
   width: 36px;
   height: 36px;
   display: grid;
@@ -247,7 +255,66 @@ main {
 }
 
 
+
 /* ================================================== */
+
+/* ======================================== ABOUT ======================================== */
+
+.about .row {
+  padding: 1.5rem;
+}
+
+/* .about_description{
+  padding: 1.5rem;
+} */
+.about_description h1{
+  margin-bottom: 10px;
+  color: var(--text-base);
+  font-size: var(--fs-4xl);
+}
+.about_description p{
+  margin-bottom: 10px;
+  color: var(--text-base);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-normal);
+}
+
+.about_description p span{
+  font-weight: var(--fw-bold);
+}
+
+.about_details {
+}
+
+.about_titles {
+  font-size: var(--fs-4xl);
+  color: var(--text-base);
+  font-weight: var(--fw-semibold);
+}
+
+.about_info {
+  margin-top: 1.5rem;
+}
+.about_info li{
+  padding: 1rem;
+}
+
+
+.about_info-title{
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+}
+.about_info-subtitle{
+  font-size: var(--fs-xl);
+}
+.about_info-description{
+  font-size: var(--fs-base);
+}
+
+.about_skills-title {
+  font-size: var(--fs-2xl);
+}
+/* ======================================================================================= */
 
 
 /* .shadow-button {
@@ -263,7 +330,7 @@ main {
 
 .shadow-button:hover {
   transform: translate(0, -3px);
-  box-shadow: 0 20px 80px -10px var(--accent-primary);
+  box-shadow: 0 20px 80px -10px var(--color-primary);
 }
  */
 

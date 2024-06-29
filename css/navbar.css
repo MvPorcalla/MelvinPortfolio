@@ -55,7 +55,7 @@
     transition: transform 500ms linear;
   }
   .nav-link.active {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
   }
   .nav-link:hover {
     transform: translateY(-10px);
