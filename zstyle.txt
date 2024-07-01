@@ -1,142 +1,56 @@
-
-/* ================== Image style ================== */
-
-
-.home_title_name {
-  display: none;
-  text-align: center;
-}
-.home_image_container {
-  position: relative;
-}
-.home_image {
-  display: inline-block;
-  position: relative;
-  z-index: -1;
-}
-
-.home_image::before {
-  position: absolute;
-  bottom: -5%;
-  right: -7%;
-  width: 100%;
-  height: 100%;
-  border: 4px solid var(--text-base);
-  background-color: var(--bg-base-lt);
-  content: '';
-  z-index: -2;
-}
-.home_img {
-  width: 20rem;
-  border: 4px solid var(--text-base);
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
-} 
-
-
-/* ================================================== */
-
-/* ================== home content info ================== */
-.home_info {
-  position: relative;
-}
-
-.home_name {
-  color: var(--text-base);
-  font-size: var(--fs-7xl);
-  margin: 0;
-}
-.home_title {
-  font-size: var(--fs-4xl);
-  font-weight: var(--fw-normal);
-}
-.home_description {
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-normal);
-}
-
-.home_scroll {
-  position: relative;
-  display: block;
-  margin: 0;
-}
-
-.home_scroll-box {
-  background-color: var(--text-base);
-  border-radius: 2px;
-  color: var(--bg-base);
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  font-size: 1.5rem;
-  cursor: pointer;
-  overflow: hidden;
-  transition: color 0.3s, transform 0.3s;
-
-}
-.home_scroll-box i {
-  animation: scroll-down 2s infinite;
-}
-.home_scroll-text {
-  display: none;
-}
-/* arrow down animation */
-@keyframes scroll-down {
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0);
-    opacity: 1;
-
-  }
-  100% {
-    transform: translateY(0.6rem);
-    opacity: 0;
-  }
-}
-/* ================================================== */
-/* =============== home_social links =============== */
-.home_social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  
-}
-
-.home_social_link {
-  background-color: var(--bg-base-ltr);
-  border-radius: 5px;
-  padding: 6px;
-  text-align: center;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.home_icon {
-  font-size: 1.5rem;
-  color: var(--text-base);
-}
-
-
-/* ================================================== */
-
-
-/* .shadow-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.shadow-button:hover {
-  transform: translate(0, -3px);
-  box-shadow: 0 20px 80px -10px var(--accent-primary);
-}
- */
-
+<div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-html5'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-css3'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-javascript'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-bootstrap'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-tailwind-css'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-vuejs'></i>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-php'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-nodejs'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-git'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-github'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="about_icons">
+                                                <i class='bx bxl-gitlab'></i>
+                                            </div>
+                                        </div>
