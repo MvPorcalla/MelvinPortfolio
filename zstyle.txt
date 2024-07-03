@@ -1,56 +1,56 @@
 <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-html5'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-css3'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-javascript'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-bootstrap'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-tailwind-css'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-vuejs'></i>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-php'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-nodejs'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-git'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-github'></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="about_icons">
-                                                <i class='bx bxl-gitlab'></i>
-                                            </div>
-                                        </div>
+  <div class="about_icons">
+      <i class='bx bxl-html5'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-css3'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-javascript'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-bootstrap'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-tailwind-css'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-vuejs'></i>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-php'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-nodejs'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-git'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-github'></i>
+  </div>
+</div>
+<div class="col-md-2">
+  <div class="about_icons">
+      <i class='bx bxl-gitlab'></i>
+  </div>
+</div>
