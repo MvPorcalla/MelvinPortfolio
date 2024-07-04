@@ -3,145 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Responsive Grid with Icons</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0073e6;
-        }
-        .section {
+        .about_grid-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
             margin-bottom: 20px;
+            border-radius: 10px;
         }
-        .section h2 {
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 5px;
+        .about_grid-box i {
+            font-size: 2rem;
+            color: #007bff;
         }
-        .certificate {
-            max-width: 200px;
-            display: block;
-            margin: 10px 0;
-        }
-        #skills {
-        margin: 20px 0;
-    }
-    .skills-section {
-        margin: 10px 0;
-    }
-    h1, h2 {
-        color: #333;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        background: #f4f4f4;
-        margin: 5px 0;
-        padding: 10px;
-        border-radius: 5px;
-    }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>About Me</h1>
-        <p>Hi, I’m <strong>[Your Name]</strong>, a passionate frontend developer with a knack for creating engaging and user-friendly web interfaces. With [X] years of experience in the industry, I specialize in <strong>[key skills or technologies]</strong>. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
-
-        <div class="section">
-            <section id="skills">
-                <h1>Skills</h1>
-                <div class="skills-section">
-                    <h2>Frontend</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>Tailwind</li>
-                        <li>Vue.js</li>
-                        <li>Quasar</li>
-                    </ul>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-html5"></i>
                 </div>
-                <div class="skills-section">
-                    <h2>Backend</h2>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                        <li>Python</li>
-                    </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-css3-alt"></i>
                 </div>
-            </section>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>HTML, CSS, JavaScript</strong></li>
-                <li><strong>Frameworks:</strong> React, Vue.js</li>
-                <li><strong>Tools:</strong> Git, Webpack, npm</li>
-                <li><strong>UX/UI Design, Accessibility</strong></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Experience</h2>
-            <p>I’ve had the pleasure of working with <strong>[Company/Project Names]</strong>, where I [briefly describe your role and contributions]. My portfolio includes projects ranging from <strong>[type of projects, e.g., e-commerce sites, web apps]</strong> to <strong>[other types of projects]</strong>.</p>
-        </div>
-
-        <div class="section">
-            <h2>Education and Certifications</h2>
-            <ul>
-                <li><strong>B.S. in Computer Science</strong> from [University Name]</li>
-                <li><strong>Certified Frontend Developer</strong> from [Certification Body]</li>
-                <li><strong>Completed On-the-Job Training</strong> in Frontend Development at [Company/Organization Name]</li>
-                <li>
-                    <a href="path/to/your-certificate.pdf" target="_blank">
-                        <img src="path/to/your-certificate-thumbnail.jpg" alt="Certificate Thumbnail" class="certificate">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        
-
-        <div class="section">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Awarded <strong>[Award Name]</strong> for [reason]</li>
-                <li>Recognized by <strong>[Organization]</strong> for [achievement]</li>
-                
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Personal Projects and Interests</h2>
-            <p>When I’m not coding, you’ll find me <strong>[hobbies or interests]</strong>. I love experimenting with new technologies and am always on the lookout for exciting challenges.</p>
-        </div>
-
-        <div class="section">
-            <h2>Testimonials</h2>
-            <blockquote>"Working with [Your Name] was a fantastic experience. Their expertise in frontend development brought our vision to life." – <strong>[Client/Colleague Name]</strong></blockquote>
-        </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Let’s get in touch! You can reach me at <strong>[email@example.com]</strong> or connect with me on <strong>[LinkedIn/GitHub/Twitter]</strong>.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-react"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-vuejs"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
+                <div class="about_grid-box">
+                    <i class="fab fa-git"></i>
+                </div>
+            </div>
         </div>
     </div>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

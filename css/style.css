@@ -231,6 +231,21 @@ main {
     opacity: 0;
   }
 }
+
+
+.home_button-text {
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
 /* ================================================== */
 /* =============== home_social links =============== */
 .home_social {
@@ -316,26 +331,13 @@ main {
 .about_icons-container {
   margin-bottom: 5rem;
 }
-.about_icons {
+.about_grid-box {
   font-size: var(--fs-5xl);
 }
+
+
 /* ======================================================================================= */
 
 
-/* .shadow-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.shadow-button:hover {
-  transform: translate(0, -3px);
-  box-shadow: 0 20px 80px -10px var(--color-primary);
-}
- */
 
