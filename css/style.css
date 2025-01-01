@@ -285,12 +285,12 @@ main {
 .about_description h1{
   margin-bottom: 10px;
   color: var(--text-base);
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-2xl);
 }
 .about_description p{
   margin-bottom: 10px;
   color: var(--text-base);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   font-weight: var(--fw-normal);
 }
 
@@ -299,41 +299,7 @@ main {
 }
 
 
-.about_titles {
-  font-size: var(--fs-4xl);
-  color: var(--text-base);
-  font-weight: var(--fw-semibold);
-}
 
-.about_info {
-  margin-top: 1.5rem;
-}
-.about_info li{
-  padding: 1rem;
-}
-
-
-.about_info-title{
-  font-size: var(--fs-2xl);
-  font-weight: var(--fw-bold);
-}
-.about_info-subtitle{
-  font-size: var(--fs-xl);
-}
-.about_info-description{
-  font-size: var(--fs-base);
-}
-
-.about_skills-title {
-  font-size: var(--fs-2xl);
-}
-
-.about_icons-container {
-  margin-bottom: 5rem;
-}
-.about_grid-box {
-  font-size: var(--fs-5xl);
-}
 
 
 /* ======================================================================================= */
