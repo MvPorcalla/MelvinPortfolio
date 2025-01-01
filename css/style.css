@@ -237,8 +237,8 @@ main {
   
   padding: 10px 20px;
   font-size: 16px;
-  color: white;
-  background-color: #007bff;
+  color: var(--text-base);
+  background: var(--color-secondary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -339,5 +339,20 @@ main {
 /* ======================================================================================= */
 
 
+.card-img-top {
+  height: 200px; /* Adjust height as needed */
+  width: 100%; /* Ensure the image takes full width of the card */
+  object-fit: cover; /* Maintain aspect ratio and cover entire space */
+}
 
+.card {
+  /* Optional: Add some padding or margin to the card for spacing */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  /* Ensure text stays within the card */
+  height: 100%;
+}
 

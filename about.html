@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid with Icons</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <style>
-        .about_grid-box {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        .about_grid-box i {
-            font-size: 2rem;
-            color: #007bff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional custom styles */
+    .card-img-top {
+      height: 200px; /* Adjust height as needed */
+      width: 100%; /* Ensure the image takes full width of the card */
+      object-fit: cover; /* Maintain aspect ratio and cover entire space */
+    }
+
+    .card {
+      /* Optional: Add some padding or margin to the card for spacing */
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card-body {
+      /* Ensure text stays within the card */
+      height: 100%;
+    }
+    body{
+        background-color: pink;
+    }
+  </style>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-html5"></i>
+        <div class="row mt-3">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="page2.html" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="./assets/images/IMG_char.png" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                    <h5 class="card-title">Description 2</h5>
+                    <p class="card-text">Here goes the description of the project or topic 2.</p>
+                    <p class="card-text"><small class="text-muted">Language Used: Python, Flask</small></p>
+                    </div>
                 </div>
+                </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-css3-alt"></i>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="page2.html" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="./assets/images/IMG_char.png" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                    <h5 class="card-title">Description 2</h5>
+                    <p class="card-text">Here goes the description of the project or topic 2.</p>
+                    <p class="card-text"><small class="text-muted">Language Used: Python, Flask</small></p>
+                    </div>
                 </div>
+                </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-js"></i>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="page2.html" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="./assets/images/IMG_char_full.png" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                    <h5 class="card-title">Description 2</h5>
+                    <p class="card-text">Here goes the description of the project or topic 2.</p>
+                    <p class="card-text"><small class="text-muted">Language Used: Python, Flask</small></p>
+                    </div>
                 </div>
+                </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-bootstrap"></i>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="page2.html" target="_blank" class="card-link">
+                <div class="card">
+                    <img src="./assets/images/IMG_char.png" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                    <h5 class="card-title">Description 2</h5>
+                    <p class="card-text">Here goes the description of the project or topic 2.</p>
+                    <p class="card-text"><small class="text-muted">Language Used: Python, Flask</small></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-react"></i>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-vuejs"></i>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-node-js"></i>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-1 mb-4">
-                <div class="about_grid-box">
-                    <i class="fab fa-git"></i>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
