@@ -45,7 +45,7 @@
 
   --color-primary: #ea580c;
   --color-secondary: #c2410c;
-  --color-gradient: linear-gradient(135deg, #22c55e, #10b981, #06b6d4, #0ea5e9, #0284c7);
+  --color-gradient: linear-gradient(135deg, #22c55e 0%, #10b981 20%, #06b6d4 40%, #0ea5e9 60%, #0284c7 80%, #005eaa 100%);
 
 }
 
@@ -60,7 +60,9 @@ body.light {
 
   --color-primary: #c2410c;
   --color-secondary: #c2410c;
-  --color-gradient: linear-gradient(to right, blue, green);
+  --color-gradient: linear-gradient(135deg, #050e4f 0%, #061161 25%, #a11c5a 50%, #bf1416 75%, #780206 100%);
+
+
 
 }
 
@@ -298,6 +300,70 @@ main {
   font-weight: var(--fw-bold);
 }
 
+@keyframes slides {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.about_logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.about_logos:before, .about_logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.about_logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), var(--bg-base));
+}
+
+.about_logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0),  var(--bg-base));
+}
+
+.about_logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.about_logos:hover .about_logo_items {
+  animation-play-state: paused;
+}
+
+.about_logo_icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--text-base);
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.about_logo_icon i {
+  font-size: 35px;
+  color: var(--bg-base);
+  margin-right: 10px;
+}
+
+.about_logo_icon span {
+  color: var(--bg-base);
+  font-weight: var(--fw-semibold);
+  font-size: 18px;
+}
 
 
 
@@ -322,3 +388,58 @@ main {
   height: 100%;
 }
 
+
+/* ======================================== ABOUT ======================================== */
+
+.project-card {
+  background-color: transparent;
+  border: 1px solid;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 7px 7px 0px var(--color-primary);
+}
+
+.project-title {
+  font-size: var(--fs-3xl);
+  font-weight: bold;
+  color: var(--text-base);
+  margin-bottom: 20px;
+}
+
+.project-card-body, .project-pl-text {
+  font-size: var(--fs-base);
+  color: var(--text-base-lt);
+}
+
+.project-pl-text{
+  font-weight: var(--fw-semibold);
+}
+
+.project-pl-text span{
+  font-size: var(--fs-base);
+  color: var(--color-primary);
+  padding-right: 10px;
+}
+
+.project-card-body .project-btn  {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--text-base);
+  margin-top: 20px;
+}
+
+.project-card-body .project-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--text-base);
+}
+
+.project-icon {
+  font-size: var(--fs-xl);
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* ======================================================================================= */

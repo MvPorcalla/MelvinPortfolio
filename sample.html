@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-card {
+            background-color: transparent;
+            border: 1px solid;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: 7px 7px 0px var(--color-primary);
+        }
+
+        .project-title {
+            font-size: var(--fs-3xl);
+            font-weight: bold;
+            color: var(--text-base);
+            margin-bottom: 20px;
+        }
+
+        .project-card-body, .project-pl-text {
+            font-size: var(--fs-base);
+            color: var(--text-base-lt);
+        }
+
+        .project-card-body hr {
+            border-top: 1px solid #dee2e6;
+        }
+
+        .project-card-body .btn-primary {
+            background-color: transparent;
+            border-color: var(--color-primary);
+            color: var(--text-base);
+            margin-top: 20px;
+        }
+
+        .project-card-body .btn-primary:hover {
+            background-color: var(--color-primary);
+            color: var(--text-base);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="project-card px-3 py-3">
+                    <div class="project-card-body">
+                        <p class="project-pl-text"><span class="text-muted">Used: </span>Python, Flask</p>
+                        <hr>
+                        <h1 class="project-title">Research Hobby</h1>
+                        <p class="card-text">
+                            This project explores the integration of machine learning algorithms in web applications. 
+                            The project is built using Python and Flask.
+                        </p>
+                        <a href="page2.html" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
