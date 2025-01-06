@@ -365,7 +365,14 @@ main {
   font-size: 18px;
 }
 
+.skills_item i {
+  font-size: 30px;
+}
 
+.skills_item h3 {
+  font-size: var(--fs-lg);
+  color: var(--text-base);
+}
 
 
 /* ======================================================================================= */
@@ -406,7 +413,7 @@ main {
   font-size: var(--fs-3xl);
   font-weight: bold;
   color: var(--text-base);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .project-card-body, .project-pl-text {
@@ -428,7 +435,7 @@ main {
   background-color: transparent;
   border-color: var(--color-primary);
   color: var(--text-base);
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .project-card-body .project-btn:hover {
@@ -440,6 +447,45 @@ main {
   font-size: var(--fs-xl);
   vertical-align: middle;
   margin-left: 10px;
+}
+
+/* ======================================================================================= */
+
+
+/* ======================================== CONTACT ======================================== */
+
+.contact-description {
+  padding: 1.5rem;
+  font-size: var(--fs-2xl);
+}
+
+.business-card {
+  background-color: var(--bg-base-lt);
+  color: var(--text-base);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 10px 10px 0px var(--color-secondary); /* Added shadow */
+}
+.business-card .card-title {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.business-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.business-card-line {
+  border-left: 3px solid var(--text-base);
+}
+
+.business-card-link {
+  color: var(--text-base);
+  transition: color 0.3s ease;
+}
+
+.business-card-link:hover {
+  color: var(--color-primary);
 }
 
 /* ======================================================================================= */

@@ -3,77 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Business Card</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
         body {
-            background-color: #000000;
+            background: var(--bg-color);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-
-        .project-card {
-            background-color: transparent;
-            border: 1px solid;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            border-color: var(--color-primary);
-            box-shadow: 7px 7px 0px var(--color-primary);
-        }
-
-        .project-title {
-            font-size: var(--fs-3xl);
-            font-weight: bold;
+        .business-card {
+            background-color: var(--bg-base-lt);
             color: var(--text-base);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .business-card .card-title {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+        }
+        .business-card .card-text {
+            font-size: 1rem;
             margin-bottom: 20px;
         }
-
-        .project-card-body, .project-pl-text {
-            font-size: var(--fs-base);
-            color: var(--text-base-lt);
+        .business-card-line {
+            border-left: 3px solid var(--text-base);
         }
-
-        .project-card-body hr {
-            border-top: 1px solid #dee2e6;
-        }
-
-        .project-card-body .btn-primary {
-            background-color: transparent;
-            border-color: var(--color-primary);
-            color: var(--text-base);
-            margin-top: 20px;
-        }
-
-        .project-card-body .btn-primary:hover {
-            background-color: var(--color-primary);
+        .business-card-link {
             color: var(--text-base);
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row mt-5">
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card px-3 py-3">
-                    <div class="project-card-body">
-                        <p class="project-pl-text"><span class="text-muted">Used: </span>Python, Flask</p>
-                        <hr>
-                        <h1 class="project-title">Research Hobby</h1>
-                        <p class="card-text">
-                            This project explores the integration of machine learning algorithms in web applications. 
-                            The project is built using Python and Flask.
-                        </p>
-                        <a href="page2.html" target="_blank" class="btn btn-primary">View Project</a>
-                    </div>
+            <div class="col-12">
+                <div class="business-card text-center">
+                    <div class="row">
+                        <div class="col-4 text-lg-start">
+                            <h5 class="card-title">Melvin Porcalla</h5>
+                            <p class="card-text">Web Developer</p>
+                        </div>
+                        <div class="col-1 d-flex align-items-center">
+                            <div class="business-card-line vr"></div>
+                        </div>
+                        <div class="col-7">
+                            <div class="text-lg-start">
+                                <h5 class="card-text">
+                                    Email: porcallamelvin@gmail.com <br>
+                                    Phone: (123) 456-7890
+                                </h5>
+                                <div class="business-card-social">
+                                    <a href="https://www.facebook.com/profile.php?id=100074859700201" target="_blank" class="business-card-link d-block mb-3">
+                                        <i class='bx bxl-facebook-circle bx-2x'></i> Facebook
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/melvin-porcalla-7012b9289/" target="_blank" class="business-card-link d-block mb-3">
+                                        <i class='bx bxl-linkedin-square bx-2x'></i> LinkedIn
+                                    </a>
+                                    <a href="https://github.com/MvPorcalla" target="_blank" class="business-card-link d-block mb-2">
+                                        <i class='bx bxl-github bx-2x'></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
             </div>
-            
         </div>
     </div>
     <!-- Bootstrap JS and dependencies -->
