@@ -73,38 +73,37 @@
 
     .contact-description {
         padding: 1.5rem;
-        font-size: var(--fs-2xl);
+        font-size: var(--fs-lg);
     }
     
-  .business-card {
-    background-color: var(--bg-base-lt);
-    color: var(--text-base);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    max-height: 900px;
-    box-shadow: 10px 10px 0px var(--color-secondary); /* Added shadow */
-  }
-  .business-card .card-title {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-  }
-  .business-card .card-text {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  .business-card-line {
-    border-left: 3px solid var(--text-base);
-  }
-  
-  .business-card-link {
-    color: var(--text-base);
-    transition: color 0.3s ease;
-  }
-  
-  .business-card-link:hover {
-    color: var(--color-primary);
-  }
+    .business-card {
+        background-color: var(--bg-base-lt);
+        color: var(--text-base);
+        padding: 20px;
+        margin: 20px auto;
+
+        box-shadow: 10px 10px 0px var(--color-secondary); /* Added shadow */
+    }
+    .business-card .card-title {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+    .business-card .card-text {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .business-card-line {
+        border-left: 3px solid var(--text-base);
+    }
+    
+    .business-card-link {
+        color: var(--text-base);
+        transition: color 0.3s ease;
+    }
+    
+    .business-card-link:hover {
+        color: var(--color-primary);
+    }
   
   /* ======================================================================================= */
     

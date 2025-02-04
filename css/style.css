@@ -234,7 +234,6 @@ main {
   }
 }
 
-
 .home_button-text {
   
   padding: 10px 20px;
@@ -246,7 +245,6 @@ main {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 
 /* ================================================== */
 /* =============== home_social links =============== */
