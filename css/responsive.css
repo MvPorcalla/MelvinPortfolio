@@ -85,11 +85,11 @@
         box-shadow: 10px 10px 0px var(--color-secondary); /* Added shadow */
     }
     .business-card .card-title {
-        font-size: 1.75rem;
+        font-size: var(--fs-2xl);
         margin-bottom: 10px;
     }
     .business-card .card-text {
-        font-size: 1rem;
+        font-size: var(--fs-xs);
         margin-bottom: 20px;
     }
     .business-card-line {
@@ -98,6 +98,7 @@
     
     .business-card-link {
         color: var(--text-base);
+        font-size: var(--fs-sm);
         transition: color 0.3s ease;
     }
     
