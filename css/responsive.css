@@ -81,8 +81,8 @@
         color: var(--text-base);
         padding: 20px;
         margin: 20px auto;
-
         box-shadow: 10px 10px 0px var(--color-secondary); /* Added shadow */
+        margin-bottom: 100px;
     }
     .business-card .card-title {
         font-size: var(--fs-2xl);
