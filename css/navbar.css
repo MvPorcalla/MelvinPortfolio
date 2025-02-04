@@ -93,7 +93,7 @@
     height: 5rem;
   }
   .sidenavbar:hover {
-    width: 100vw;
+    width: 100%;
   }
 
   .logo {
